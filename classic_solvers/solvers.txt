@@ -1,0 +1,8 @@
+# write [algorithm name]:[command to execute algorithm]
+# {0} is where the file name goes and {1} is where the time limit goes
+BURER2002:python classic_solvers/BURER2002.py {0} {1}
+DESOUSA2013:python classic_solvers/DESOUSA2013.py {0} {1}
+DUARTE2005:python classic_solvers/DUARTE2005.py {0} {1}
+#FESTA2002GPR:python classic_solvers/FESTA2002GPR.py {0} {1}
+#FESTA2002GVNSPR:python classic_solvers/FESTA2002GVNSPR.py {0} {1}
+#LAGUNA2009HCE:python classic_solvers/LAGUNA2009HCE.py {0} {1}

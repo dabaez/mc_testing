@@ -1,0 +1,5 @@
+# write [algorithm name]:[command to execute algorithm], first line uncommented will be taken
+# {0} is where the file name goes and {1} is where the time limit goes
+hyper1:python neural_network/maxcut_run.py neural_network/hyper1.json {0} {1}
+hyper2:python neural_network/maxcut_run.py neural_network/hyper2.json {0} {1}
+hyper3:python neural_network/maxcut_run.py neural_network/hyper3.json {0} {1}

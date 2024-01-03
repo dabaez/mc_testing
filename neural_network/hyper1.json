@@ -1,0 +1,4 @@
+{"dim_embedding":400,
+ "hidden_dim":[ 5 ],
+ "learning_rate":5e-3,
+ "dropout":0.0}
