@@ -25,7 +25,10 @@ with open(filename, 'r') as file:
             break
     num_nodes, num_edges = map(int, line.split())
     for _ in range(num_edges):
-        node1, node2, weight = map(int, file.readline().split())
+        line = file.readline().split()
+        node1 = int(line[0])
+        node2 = int(line[1])
+        weight = float(line[2])
         G.add_edge(node1, node2, weight=weight)
 G = nx.relabel.convert_node_labels_to_integers(G)
 nx_graph = nx.OrderedGraph()

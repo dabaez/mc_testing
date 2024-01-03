@@ -43,7 +43,8 @@ for command_full in commands:
                 continue
             file_path = group_path + "/" + filename
             formatted_command = command.format(file_path,time_limit)
-            result = subprocess.run(formatted_command, shell=True, stdout=subprocess.PIPE)
+            result = subprocess.run(formatted_command, shell=True, capture_output=True)
+            print(result.stdout.decode('utf-8'))
             result_text = result.stdout.decode('utf-8').splitlines()[-1].split(',')
             mc = float(result_text[0])
             time = float(result_text[1])
