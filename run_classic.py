@@ -43,8 +43,9 @@ for command_full in commands:
                 continue
             file_path = group_path + "/" + filename
             formatted_command = command.format(file_path,time_limit)
-            result = subprocess.run(formatted_command, shell=True, stdout=subprocess.PIPE)
-            result_text = result.stdout.decode('utf-8').split(',')
+            result = subprocess.run(formatted_command, shell=True, capture_output=True)
+            result_text = result.stdout.decode('utf-8').splitlines()[-1].split(',')
+            print(result.stdout.decode('utf-8'))
             mc = float(result_text[0])
             time = float(result_text[1])
             df.loc[len(df.index)] = [filename, time, mc]
