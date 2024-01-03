@@ -16,7 +16,7 @@ for density in d:
             graph = nx.Graph()
             graph.add_nodes_from(sorted(nx_temp.nodes()))
             graph.add_edges_from(nx_temp.edges(data=True))
-            with open(f"my_graphs/gb_1_10f/gb_1_10f_{size}_{density}_{i}", 'w') as file:
+            with open(f"../gb_1_10f/gb_1_10f_{size}_{density}_{i}", 'w') as file:
                 
                 file.write(f"# graph with density {density} created with networkx fast_gnp_random_graph with seed {seed} and edges weighted randomly from [0.001,10] including three decimals\n")
 
@@ -26,4 +26,4 @@ for density in d:
                 for edge in graph.edges(data=True):
                     node1, node2, data = edge
                     weight = data.get('weight', 1.0)  # If no weight attribute, default to 1.0
-                    file.write(f"{node1} {node2} {weight}\n")
+                    file.write(f"{node1+1} {node2+1} {weight}\n")
