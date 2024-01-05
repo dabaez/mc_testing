@@ -59,7 +59,7 @@ for i in range(len(sizes)):
     colors.append(d_percentages[main_alg])
 
 plt.subplots_adjust(top=0.7)
-#plt.show()
+plt.show()
 
 plt.close()
 
