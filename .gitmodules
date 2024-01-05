@@ -1,0 +1,4 @@
+[submodule "classic_solvers/MQLib"]
+	path = classic_solvers/MQLib
+	url = https://github.com/giordano/MQLib.git
+	branch = mg/include-limits
