@@ -1,8 +1,13 @@
 # write [algorithm name]:[command to execute algorithm]
 # {0} is where the file name goes and {1} is where the time limit goes
-BURER2002:python classic_solvers/BURER2002.py {0} {1}
-DESOUSA2013:python classic_solvers/DESOUSA2013.py {0} {1}
-DUARTE2005:python classic_solvers/DUARTE2005.py {0} {1}
-#FESTA2002GPR:python classic_solvers/FESTA2002GPR.py {0} {1}
-#FESTA2002GVNSPR:python classic_solvers/FESTA2002GVNSPR.py {0} {1}
-#LAGUNA2009HCE:python classic_solvers/LAGUNA2009HCE.py {0} {1}
+BURER2002:python BURER2002.py {0} {1}
+#DESOUSA2013:python DESOUSA2013.py {0} {1}
+#DUARTE2005:python DUARTE2005.py {0} {1}
+#FESTA2002G:python FESTA2002G.py {0} {1}
+FESTA2002GPR:python FESTA2002GPR.py {0} {1}
+#FESTA2002GVNS:python FESTA2002GVNS.py {0} {1}
+FESTA2002GVNSPR:python FESTA2002GVNSPR.py {0} {1}
+#FESTA2002VNS:python FESTA2002VNS.py {0} {1}
+#FESTA2002VNSPR:python FESTA2002VNSPR.py {0} {1}
+#LAGUNA2009CE:python LAGUNA2009CE.py {0} {1}
+#LAGUNA2009HCE:python LAGUNA2009HCE.py {0} {1}
