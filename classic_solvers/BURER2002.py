@@ -1,8 +1,7 @@
 import subprocess
 import sys
 
-command = "./classic_solvers/MQLib/bin/MQLib -h BURER2002 -fM " + sys.argv[1] + " -r " + sys.argv[2]
-
+command = "./MQLib/bin/MQLib -h BURER2002 -fM " + sys.argv[1] + " -r " + sys.argv[2]
 result = subprocess.run( command , shell=True , capture_output=True, check=False)
 print(result.stdout.decode('utf-8'))
 result_text = result.stdout.decode('utf-8').split(',')
