@@ -67,6 +67,10 @@ for i in range(len(colors)):
     for j in range(len(colors[i])):
         colors[i][j] *= 100
 
+print(f"Mean percentage: {np.mean(colors):.2f}")
+print(f"Percentage median: {np.median(colors):.2f}")
+print(f"STD Percentage: {np.std(colors):.2f}")
+
 small_range = [0, 1, 2, 3, 4]
 plt.pcolormesh(small_range, small_range, colors, cmap='viridis')
 plt.yticks(small_range,[str(value) for value in sizes])
